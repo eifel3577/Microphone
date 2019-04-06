@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/fragment_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="32dp"
+              android:text="@string/CONNECTED_WITH_DEVICE"
+              android:gravity="center_vertical"
+              android:textColor="@color/default_text_color"
+              android:id="@+id/connected_caption"
+              android:paddingLeft="5dp"
+              android:textSize="18sp"/>
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="32dp"
+              android:id="@+id/device_name"
+              android:textColor="@color/action_bar_red"
+              android:paddingLeft="5dp"
+              android:gravity="center_vertical"
+              android:textStyle="bold"
+              android:text="@string/WAITING_FOR_CONNECTION"
+              android:textSize="18sp"/>
+</LinearLayout>

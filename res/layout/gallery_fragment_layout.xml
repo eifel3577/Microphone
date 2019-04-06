@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res/com.sapphire.microphone"
+              android:orientation="vertical"
+              android:background="@drawable/fragment_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.sapphire.microphone.quilt.QuiltView
+            android:id="@+id/tile"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scrollOrientation="vertical" >
+    </com.sapphire.microphone.quilt.QuiltView>
+</LinearLayout>

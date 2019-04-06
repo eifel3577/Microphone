@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/root"
+              android:background="#fff"
+              android:layout_width="300dp"
+              android:layout_height="300dp">
+    <ImageView android:layout_width="300dp"
+               android:layout_height="184dp"
+               android:id="@+id/dialog_image"
+               android:src="@drawable/save_dialog_image"/>
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/message"
+              android:layout_below="@+id/dialog_image"
+              android:textSize="16sp"
+              android:gravity="center"
+              android:padding="10dp"
+              android:text="@string/PROCESSING_VIDEO"
+              android:layout_centerInParent="true"
+              android:textColor="@color/action_bar_red"/>
+    <ProgressBar android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 style="?android:attr/progressBarStyle"
+                 android:indeterminate="true"
+                 android:layout_gravity="center_vertical"
+                 android:layout_centerHorizontal="true"
+                 android:layout_below="@+id/message"
+                 android:indeterminateOnly="true"/>
+</RelativeLayout>

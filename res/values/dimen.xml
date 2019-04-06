@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_group_height">64dp</dimen>
+    <dimen name="button_group_height_2">96dp</dimen>
+    <dimen name="button_group_width">180dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+</resources>

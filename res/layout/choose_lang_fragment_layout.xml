@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/CHOOSE_APP_LANGUAGE"
+        android:textColor="@color/default_text_color"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:weightSum="3"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/english"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/english"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/ENGLISH_LANGUAGE"
+            android:textColor="@color/default_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/russian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/russian"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/RUSSIAN_LANGUAGE"
+            android:textColor="@color/default_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/chinese"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/chinese"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/CHINESE_LANGUAGE"
+            android:textColor="@color/default_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/japanese"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/japanese"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/JAPANESE_LANGUAGE"
+            android:textColor="@color/default_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/korean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/korean"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/KOREAN_LANGUAGE"
+            android:textColor="@color/default_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Microphone</string>
+    <string name="RECORD">Запись</string>
+    <string name="DATA">Материалы</string>
+    <string name="SETTINGS">Настройки</string>
+    <string name="WAITING_FOR_RECORD">Пожалуйста подождите,\nприложение в ожидании записи</string>
+    <string name="CHANGE_ROLE">Изменить роль</string>
+    <string name="CAMERA_ROLE_NORMAL">Обычный</string>
+    <string name="CAMERA_ROLE_SQUARE">Идет процесс синхронизации</string>
+     <string name="SELECT_ROLE">Выберите роль камеры</string>
+      <string name="CAMERA_ROLE">роль камеры</string>
+    <string name="OTHER_SETTINGS">Другие настройки</string>
+    <string name="CAMERA">Камера</string>
+    <string name="MICROPHONE">Микрофон</string>
+    <string name="UNKNOWN">Неизвестно</string>
+    <string name="SAVE">Сохранить</string>
+    <string name="CANCEL">Отмена</string>
+    <string name="CONNECTED_WITH_DEVICE">Сопряжено с устройством:</string>
+    <string name="WAITING_FOR_CONNECTION">Ожидаем подключения</string>
+    <string name="ERROR_REMOTE_ROLE_CHECK">Ошибка определения роли удаленного устройства</string>
+    <string name="SAME_ROLE" formatted="false">На удаленном устройстве также установлена роль \'%s\'.\nОдинаковые роли не допустимы</string>
+    <string name="CONNECTION_ERROR_RETRY_AGAIN">Ошибка соединения с удаленным устройством. Попробуйте еще раз</string>
+    <string name="DEVICES">Устройства</string>
+    <string name="CONNECTING">Соединение…</string>
+    <string name="CONNECTION">Соединение</string>
+    <string name="CONNECTION_ESTABLISHED">Связь установлена</string>
+    <string name="CONNECTION_ERROR_APP_NOT_RUNNING">Связь не была установлена. Возможно данное приложение не запущено на
+        удаленном устройстве</string>
+    <string name="LOOKING_FOR_DEVICES">Поиск устройств…</string>
+    <string name="CONNECTION_IS_NOT_EXISTING">Отсутствуют соединения с другими устройствами</string>
+    <string name="CANCEL_CONNECTION">Разорвать соединение?</string>
+    <string name="INTERRUPT">Прервать</string>
+    <string name="DEVICES_SEARCHING">Поиск устройств</string>
+    <string name="CONNECTION_IS_INTERRUPTED">Соединение разорвано</string>
+    <string name="CONNECTION_NOT_ESTABLISHED">Соединение не установлено</string>
+    <string name="VIDEO_IS_SAVING_WAIT">Видео сохраняется, подождите</string>
+    <string name="PROCESSING">Обработка</string>
+    <string name="IMAGE">IMAGE</string>
+    <string name="SHARE">Отправить</string>
+    <string name="DELETE">Удалить</string>
+    <string name="BLUETOOTH">Bluetooth</string>
+    <string name="WIFI">Wi Fi</string>
+    <string name="SEARCHING">Поиск…</string>
+    <string name="TASK">Задача</string>
+    <string name="FIRST_SLIDE_TEXT">У Вас нет видеокамеры с внешним микрофоном, но Вы хотите записать видео-интервью или
+        получить качественный звук в Вашем видео на расстоянии?</string>
+    <string name="SOLUTION">Решение</string>
+    <string name="SECOND_SLIDE_TEXT">Используйте привычные мобильные устройства как отдельные камеру и микрофон,
+        соединенные вместе!</string>
+    <string name="PLUG_IN">Подключение</string>
+    <string name="THIRD_SLIDE_TEXT">Подключине устройство-микрофон к устройству-камере, используя Bluetooth или Wi-Fi</string>
+    <string name="FOURTH_SLIDE_TEXT">Используйте одно из устройств в роли камеры</string>
+    <string name="FIFTH_SLIDE_TEXT">Используйте второе устройство в роли микрофона</string>
+    <string name="SIXTH_SLIDE_TEXT">Управляйте процессом записи при помощи любого из устройств. Начните запись видео,
+        ставьте видео на паузу, отменяйте неудачные записи.</string>
+    <string name="MATERIALS">Материалы</string>
+    <string name="SEVENTH_SLIDE_TEXT">Просматривайте материалы на устройстве-камере. Передавайте и публикуйте видео
+        всеми способами, доступными на вашем устройстве</string>
+    <string name="CHOOSE_CURRENT_DEVICE_ROLE">Выберите роль данного\nустройства</string>
+    <string name="YOU_CAN_CHANGE_ROLE_IN_FUTURE">Вы всегда сможете изменить роль позже, из раздела Настройки</string>
+    <string name="START_RECORDING">Старт записи…</string>
+    <string name="REFRESH">Обновить</string>
+    <string name="CHOOSE_APP_LANGUAGE">Выберите язык приложения</string>
+    <string name="ENGLISH_LANGUAGE">Английский</string>
+    <string name="RUSSIAN_LANGUAGE">Русский</string>
+    <string name="CHINESE_LANGUAGE">Китайский</string>
+    <string name="JAPANESE_LANGUAGE">Японский</string>
+    <string name="KOREAN_LANGUAGE">Корейский</string>
+    <string name="BACK">Назад</string>
+    <string name="CHANGE_APP_LANGUAGE">Изменить язык приложения</string>
+    <string name="VIDEO_HAS_BEEN_SAVED" formatted="false">Видео удачно сохранено в материалы</string>
+    <string name="WIFI_DIRECT">Wifi Direct</string>
+    <string name="NEXT">Далее</string>
+    <string name="ACCEPT_CONNECTION">Входящее подключение. Принять?</string>
+    <string name="YES">Да</string>
+    <string name="NO">Нет</string>
+    <string name="CONNECTION_CANCELED_BY_USER">Соединение отменено пользователем</string>
+    <string name="NOT_ENOUGH_FREE_SPACE">Недостаточно свободного места</string>
+    <string name="ENABLE_WIFI_DIRECT">Включите Wi-Fi Direct, иначе соединение можно будет установить только через
+        Bluetooth</string>
+    <string name="DELETE_VIDEO" formatted="false">Удалить видео \'%s\'?</string>
+    <string name="DELETE_FILES" formatted="false">Удалить %d файлов?</string>
+    <string name="RECORD_QUALITY">Качество записи</string>
+    <string name="VIEW_OPPORTUNITIES">Просмотр возможностей</string>
+    <string name="VIDEO_RECORD_QUALITY">Качество записи видео</string>
+    <string name="QUALITY_HIGH">Высокое</string>
+    <string name="QUALITY_NORMAL">Среднее</string>
+    <string name="QUALITY_LOW">Низкое</string>
+    <string name="RECORD_AUDIO_QUALITY">Качество записи аудио</string>
+    <string name="FREE_SPACE_ENDS">Заканчивается свободное место на диске. В течение минуты запись прервется</string>
+    <string name="RECORD_STOPPED_NOT_ENOUGH_FREE_SPACE">Запись остановлена из-за нехватки свободного места на диске</string>
+    <string name="ONLY_FOR_CAMERA">Данные настройки доступны только для роли камеры.</string>
+    <string name="RECORD_STOPPED_DUE_TO_MAX_FILE_LENGTH">Запись остановлена из-за достижения максимального размера файла.</string>
+    <string name="FILE_IS_RUNNING_OUT_OF_MAX_SIZE">Внимание! Файл достигает размера 2GB. Запись вскоре будет остановлена.</string>
+    <string name="CHANGE_ROLE_TO">Изменить роль на</string>
+    <string name="AUDIO_PLAY_ERROR">Ошибка воспроизведения аудио</string>
+    <string name="PROCESSING_AUDIO">Обработка аудио</string>
+    <string name="AUDIO_ENCODING_ERROR">Ошибка преобразования аудио</string>
+    <string name="PROCESSING_VIDEO">Обработка видео…</string>
+    <string name="ATTENTION">Внимание</string>
+    <string name="VIDEO_WILL_NOT_BE_SAVED">При отмене записанное видео не будет сохранено!</string>
+    <string name="VIDEO_PLAYBACK_ERROR">Ошибка воспроизведения видео</string>
+    <string name="SYNC">Синхронизация</string>
+    <string name="EIGHTH_SLIDE_TEXT">Скорректируйте синхронность видео и аудио дорожки перед объединением их в готовый
+        файл</string>
+
+</resources>

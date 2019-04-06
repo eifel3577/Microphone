@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/ONLY_FOR_CAMERA"
+        android:textColor="@color/default_text_color"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/quality_group"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SELECT_ROLE"
+                android:textColor="@color/action_bar_red"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/video_high"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/settings_button_bg_selector"
+                android:onClick="onClick"
+                android:text="@string/CAMERA_ROLE_SQUARE"
+                android:textColor="@color/default_text_color" />
+
+            <Button
+                android:id="@+id/video_normal"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/settings_button_bg_selector"
+                android:onClick="onClick"
+                android:text="@string/QUALITY_NORMAL"
+                android:textColor="@color/default_text_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/RECORD_AUDIO_QUALITY"
+                android:textColor="@color/action_bar_red"
+                android:textSize="22sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/audio_high"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/settings_button_bg_selector"
+                android:onClick="onClick"
+                android:text="@string/QUALITY_HIGH"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/audio_normal"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/settings_button_bg_selector"
+                android:onClick="onClick"
+                android:text="@string/QUALITY_NORMAL"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/audio_low"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:background="@drawable/settings_button_bg_selector"
+                android:onClick="onClick"
+                android:text="@string/QUALITY_LOW"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/action_bar_red"
+        android:onClick="onClick"
+        android:text="@string/SAVE" />
+
+</LinearLayout>

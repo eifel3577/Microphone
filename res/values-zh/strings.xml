@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Microphone</string>
+    <string name="RECORD">正在录像</string>
+    <string name="DATA">资料</string>
+    <string name="SETTINGS">设置</string>
+    <string name="WAITING_FOR_RECORD">等待录像中</string>
+    <string name="CHANGE_ROLE">切换角色</string>
+    <string name="CAMERA_ROLE_NORMAL"></string>
+    <string name="CAMERA_ROLE_SQUARE">广场</string>
+    <string name="SELECT_ROLE">Выберитеролькамеры</string>
+     <string name="CAMERA_ROLE">摄像头的作用</string>
+    <string name="OTHER_SETTINGS">其他设置</string>
+    <string name="CAMERA">摄像头</string>
+    <string name="MICROPHONE">麦克风</string>
+    <string name="UNKNOWN">未知</string>
+    <string name="SAVE">保存</string>
+    <string name="CANCEL">取消</string>
+    <string name="CONNECTED_WITH_DEVICE">與所述設備相關聯：</string>
+    <string name="WAITING_FOR_CONNECTION">等待連接</string>
+    <string name="ERROR_REMOTE_ROLE_CHECK">在確定遠程設備的作用的錯誤</string>
+    <string name="SAME_ROLE" formatted="false">遠程設備也設置角色\'%s\'.\n個相同的角色不允許</string>
+    <string name="CONNECTION_ERROR_RETRY_AGAIN">錯誤連接到遠程設備。</string>
+    <string name="DEVICES">设备</string>
+    <string name="CONNECTING">連接…</string>
+    <string name="CONNECTION">連接</string>
+    <string name="CONNECTION_ESTABLISHED">建立連接</string>
+    <string name="CONNECTION_ERROR_APP_NOT_RUNNING">連接尚未建立。可能地這個應用程序沒有運行上遙控器</string>
+    <string name="LOOKING_FOR_DEVICES">搜索…</string>
+    <string name="CONNECTION_IS_NOT_EXISTING">沒有與其他設備沒有任何關係</string>
+    <string name="CANCEL_CONNECTION">斷開連接？</string>
+    <string name="INTERRUPT">退出</string>
+    <string name="DEVICES_SEARCHING">搜索設備</string>
+    <string name="CONNECTION_IS_INTERRUPTED">連接關閉</string>
+    <string name="CONNECTION_NOT_ESTABLISHED">連接是不成立</string>
+    <string name="VIDEO_IS_SAVING_WAIT">視頻被保存等待</string>
+    <string name="PROCESSING">治療</string>
+    <string name="SHARE">分享通过</string>
+    <string name="DELETE">删除</string>
+    <string name="BLUETOOTH">藍牙</string>
+    <string name="WIFI">無線上網</string>
+    <string name="SEARCHING">搜索…</string>
+    <string name="TASK">任务</string>
+    <string name="FIRST_SLIDE_TEXT">你没有外部的麦克风有摄像机，但你想要记录的视频采访或得到一个高质量的声音在你的视频在距离?</string>
+    <string name="SOLUTION">解决</string>
+    <string name="SECOND_SLIDE_TEXT">使用普通的机子作为单独的摄像头和麦克风连接在一起。</string>
+    <string name="PLUG_IN">链接</string>
+    <string name="THIRD_SLIDE_TEXT">通过蓝牙或WIFI把作为麦克风的机子链接到摄像机的机子。</string>
+    <string name="FOURTH_SLIDE_TEXT">使用一个设备作为一台摄像机</string>
+    <string name="FIFTH_SLIDE_TEXT">使用第二設備作為麥克風</string>
+    <string name="SIXTH_SLIDE_TEXT">通过任何机子管理记录的过程。开始录制视频，将视频暂停，取消不良记录。</string>
+    <string name="MATERIALS">资料</string>
+    <string name="SEVENTH_SLIDE_TEXT">查看拍好的视频在你的机子上，可以转发和发布视频。</string>
+    <string name="CHOOSE_CURRENT_DEVICE_ROLE">请选择本设备的角色</string>
+    <string name="YOU_CAN_CHANGE_ROLE_IN_FUTURE">你可以任何时候切换角色在设置</string>
+    <string name="START_RECORDING">開始錄製…</string>
+    <string name="REFRESH">刷新</string>
+    <string name="CHOOSE_APP_LANGUAGE">请选择语言</string>
+    <string name="ENGLISH_LANGUAGE">英語</string>
+    <string name="RUSSIAN_LANGUAGE">俄</string>
+    <string name="CHINESE_LANGUAGE">中國</string>
+    <string name="JAPANESE_LANGUAGE">日本</string>
+    <string name="KOREAN_LANGUAGE">朝鮮的</string>
+    <string name="WIFI_DIRECT">無線網絡直接</string>
+    <string name="BACK">前</string>
+    <string name="CHANGE_APP_LANGUAGE">更改應用程序語言</string>
+    <string name="VIDEO_HAS_BEEN_SAVED" formatted="false">影片成功保存到一個文件\'%s\'</string>
+    <string name="NEXT">進一步</string>
+    <string name="ACCEPT_CONNECTION">傳入的連接。接受嗎？</string>
+    <string name="YES">我是</string>
+    <string name="NO">沒有</string>
+    <string name="CONNECTION_CANCELED_BY_USER">連接用戶取消</string>
+    <string name="NOT_ENOUGH_FREE_SPACE">沒有足夠的可用空間</string>
+    <string name="ENABLE_WIFI_DIRECT">打開Wi-Fi直，否則連接只能通過藍牙建立</string>
+    <string name="DELETE_VIDEO" formatted="false">刪除視頻？</string>
+    <string name="DELETE_FILES" formatted="false">刪除文件？</string>
+    <string name="RECORD_QUALITY">錄製質量</string>
+    <string name="VIEW_OPPORTUNITIES">查看機會</string>
+    <string name="VIDEO_RECORD_QUALITY">視頻錄製質量</string>
+    <string name="QUALITY_HIGH">高</string>
+    <string name="QUALITY_NORMAL">平均</string>
+    <string name="QUALITY_LOW">窮</string>
+    <string name="RECORD_AUDIO_QUALITY">品質錄音</string>
+    <string name="FREE_SPACE_ENDS">暗戰的磁盤空間。一分鐘後紀錄被打破</string>
+    <string name="RECORD_STOPPED_NOT_ENOUGH_FREE_SPACE">記錄已停止由於缺乏磁盤空間</string>
+    <string name="ONLY_FOR_CAMERA">這些設置僅適用於攝像頭的作用。</string>
+    <string name="RECORD_STOPPED_DUE_TO_MAX_FILE_LENGTH">錄音已停止由於最大尺寸文件。</string>
+    <string name="FILE_IS_RUNNING_OUT_OF_MAX_SIZE">警告！文件大小達到2GB。記錄將很快 停止。</string>
+    <string name="CHANGE_ROLE_TO">更改角色</string>
+    <string name="AUDIO_PLAY_ERROR">音頻播放錯誤</string>
+    <string name="PROCESSING_AUDIO">音頻處理</string>
+    <string name="AUDIO_ENCODING_ERROR">音頻編碼錯誤</string>
+    <string name="PROCESSING_VIDEO">處理視頻…</string>
+    <string name="ATTENTION">注意</string>
+    <string name="VIDEO_WILL_NOT_BE_SAVED">視頻不會被保存，如果取消！</string>
+    <string name="VIDEO_PLAYBACK_ERROR">視頻錯誤</string>
+    <string name="SYNC">同步</string>
+    <string name="EIGHTH_SLIDE_TEXT">先调整视频和音频曲目的时间， 然后再结合成一个完成的文件。</string>
+
+</resources>

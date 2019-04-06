@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/fragment_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:textColor="@color/default_text_color"
+              android:textSize="20sp"
+              android:text="@string/CHOOSE_CURRENT_DEVICE_ROLE"
+              android:gravity="center"/>
+    <LinearLayout android:layout_width="220dp"
+                  android:layout_height="64dp"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginTop="10dp">
+        <ImageButton android:layout_width="64dp"
+                     android:layout_height="64dp"
+                     android:background="@null"
+                     android:id="@+id/mic"
+                     android:contentDescription="@string/app_name"
+                     android:src="@drawable/mic_selector"/>
+        <ImageButton android:layout_width="64dp"
+                     android:layout_height="64dp"
+                     android:layout_marginLeft="90dp"
+                     android:id="@+id/camera"
+                     android:background="@null"
+                     android:contentDescription="@string/app_name"
+                     android:src="@drawable/camera_selector"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="240dp"
+                  android:layout_height="64dp"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginTop="10dp">
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textSize="16sp"
+                  android:gravity="center"
+                  android:textColor="@color/default_text_color"
+                  android:text="@string/MICROPHONE"/>
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textSize="16sp"
+                  android:gravity="center"
+                  android:textColor="@color/default_text_color"
+                  android:layout_marginLeft="55dp"
+                  android:text="@string/CAMERA"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/default_text_color"
+              android:textSize="18sp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:gravity="center"
+              android:text="@string/YOU_CAN_CHANGE_ROLE_IN_FUTURE"/>
+</LinearLayout>

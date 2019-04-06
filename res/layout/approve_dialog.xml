@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="300dp"
+              android:background="@color/white"
+              android:layout_height="180dp">
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="48dp"
+              android:textColor="@color/action_bar_red"
+              android:text="@string/ATTENTION"
+              android:gravity="center"
+              android:textSize="18sp"/>
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:id="@+id/message"
+              android:text="@string/VIDEO_WILL_NOT_BE_SAVED"
+              android:textColor="@color/default_text_color"/>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="48dp">
+        <Button android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/action_button_bg"
+                android:textColor="@color/white"
+                android:id="@+id/delete"
+                android:text="@string/DELETE"/>
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="1dp"/>
+        <Button android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/save"
+                android:background="@drawable/cancel_button_bg"
+                android:textColor="@color/gray"
+                android:text="@string/SAVE"/>
+    </LinearLayout>
+</LinearLayout>

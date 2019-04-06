@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Microphone</string>
+    <string name="RECORD">기록 중입니다.</string>
+    <string name="DATA">자료</string>
+    <string name="SETTINGS">설정</string>
+    <string name="WAITING_FOR_RECORD">기록 기다리는 중입니다.</string>
+    <string name="CHANGE_ROLE">역할 변경</string>
+    <string name="CAMERA_ROLE_NORMAL"></string>
+    <string name="CAMERA_ROLE_SQUARE">광장</string>
+     <string name="SELECT_ROLE">선택 카메라 역할</string>
+      <string name="CAMERA_ROLE">카메라 역할</string>
+    <string name="OTHER_SETTINGS">다른 설정</string>
+    <string name="CAMERA">카메라</string>
+    <string name="MICROPHONE">마이크</string>
+    <string name="UNKNOWN">알 수없는</string>
+    <string name="SAVE">저장하기</string>
+    <string name="CANCEL">취소하기</string>
+    <string name="CONNECTED_WITH_DEVICE">장치와 연관된 :</string>
+    <string name="WAITING_FOR_CONNECTION">연결 대기 중</string>
+    <string name="ERROR_REMOTE_ROLE_CHECK">원격 장치의 역할을 결정하는 에러</string>
+    <string name="SAME_ROLE" formatted="false">원격 장치는 \'%s\'.\n 동일한 역할은 역할을하지 설정 허용</string>
+    <string name="CONNECTION_ERROR_RETRY_AGAIN">원격 장치에 연결하는 중 오류가 발생했습니다.</string>
+    <string name="DEVICES">장치</string>
+    <string name="CONNECTING">연결…</string>
+    <string name="CONNECTION">연결</string>
+    <string name="CONNECTION_ESTABLISHED">연결 설립</string>
+    <string name="CONNECTION_ERROR_APP_NOT_RUNNING">연결이 아마도이 응용 프로그램이 실행되지 않습니다. 설정되지 않은 원격 장치</string>
+    <string name="LOOKING_FOR_DEVICES">검색…</string>
+    <string name="CONNECTION_IS_NOT_EXISTING">다른 장치와의 연결이 없습니다</string>
+    <string name="CANCEL_CONNECTION">연결을 휴식?</string>
+    <string name="INTERRUPT">중단</string>
+    <string name="DEVICES_SEARCHING">검색</string>
+    <string name="CONNECTION_IS_INTERRUPTED">연결 폐쇄</string>
+    <string name="CONNECTION_NOT_ESTABLISHED">연결이 설정되지 않은</string>
+    <string name="VIDEO_IS_SAVING_WAIT">비디오 대기를 저장</string>
+    <string name="PROCESSING">치료</string>
+    <string name="IMAGE">IMAGE</string>
+    <string name="SHARE">보내려면</string>
+    <string name="DELETE">삭제하기</string>
+    <string name="BLUETOOTH">블루투스</string>
+    <string name="WIFI">와이 파이</string>
+    <string name="SEARCHING">검색…</string>
+    <string name="TASK">문제</string>
+    <string name="FIRST_SLIDE_TEXT">당신은 외부 마이크가 있는 켐코더가 없습니다. 하지만 당신은 높은 화질과 음질의 비디오를 기록하고 싶습니다.</string>
+    <string name="SOLUTION">해결</string>
+    <string name="SECOND_SLIDE_TEXT">당신은 이 앱을 이용하여, 당신의 모바일 장치를 카메라로 사용하고, 다른 하나의 모바일 장치를 마이크로 사용할 수 있습니다. 이 앱은 최상의 품질을 위해 당신의 비디오와 오디오를 자동으로 연결해 줄 것입니다. 참고 : 어떤 블루투스 기능이 있는 장비나 이 어플리케이션을 사용 할 수 있습니다.</string>
+    <string name="PLUG_IN">연결</string>
+    <string name="THIRD_SLIDE_TEXT">두 개의 장치를 불루투스나 wifi를 통해 연결 하세요.</string>
+    <string name="FOURTH_SLIDE_TEXT">둘 중, 하나의 장치를 카메라로 사용하세요.</string>
+    <string name="FIFTH_SLIDE_TEXT">그리고, 다른 하나의 장치는 마이크로 사용됩니다.</string>
+    <string name="SIXTH_SLIDE_TEXT">카메라나 마이크로 사용될 장치 중 어느 것이나 선택하세요. 그리고 연결된 모바일 장치로 녹화를 시작하거나 정지 하고, 다시 녹화를 시작할 수 있습니다</string>
+    <string name="MATERIALS">자료</string>
+    <string name="SEVENTH_SLIDE_TEXT">카메라 장치에 기록된 녹화를 확인하고, 보통 때처럼 그것을 업로드하거나 친구들과 나누어 보세요.</string>
+    <string name="CHOOSE_CURRENT_DEVICE_ROLE">이 장치의 역할을 선택하십시오.</string>
+    <string name="YOU_CAN_CHANGE_ROLE_IN_FUTURE">설정 파티션을 얻어 장치의 역할을  나중에도 변경할 수 있습니다.</string>
+    <string name="START_RECORDING">녹화 시작…</string>
+    <string name="REFRESH">새로 고침</string>
+    <string name="CHOOSE_APP_LANGUAGE">앱의 언어를 선택하십시오.</string>
+    <string name="ENGLISH_LANGUAGE">영어</string>
+    <string name="RUSSIAN_LANGUAGE">러시아어</string>
+    <string name="CHINESE_LANGUAGE">중국어</string>
+    <string name="JAPANESE_LANGUAGE">일본의</string>
+    <string name="KOREAN_LANGUAGE">한국의</string>
+    <string name="WIFI_DIRECT">와이파이 다이렉트</string>
+    <string name="BACK">전</string>
+    <string name="CHANGE_APP_LANGUAGE">응용 프로그램 언어 변경</string>
+    <string name="VIDEO_HAS_BEEN_SAVED" formatted="false">동영상이 성공적으로 파일 \'%s\'에 저장</string>
+    <string name="NEXT">그 이상의</string>
+    <string name="ACCEPT_CONNECTION">들어오는 연결. 적용 여부</string>
+    <string name="YES">아니, 나야</string>
+    <string name="NO">아니</string>
+    <string name="CONNECTION_CANCELED_BY_USER">사용자에 의해 취소 연결</string>
+    <string name="NOT_ENOUGH_FREE_SPACE">충분하지 여유 공간</string>
+    <string name="ENABLE_WIFI_DIRECT">В그렇지 않으면 연결이 블루투스를 통해 만 설립 할 수있다, 와이파이 다이렉트를 켭니다</string>
+    <string name="DELETE_VIDEO" formatted="false">동영상을 삭제 하시겠습니까?</string>
+    <string name="DELETE_FILES" formatted="false">파일을 삭제 하시겠습니까?</string>
+    <string name="RECORD_QUALITY">녹화 품질</string>
+    <string name="VIEW_OPPORTUNITIES">보기 기회</string>
+    <string name="VIDEO_RECORD_QUALITY">비디오 녹화 품질</string>
+    <string name="QUALITY_HIGH">높은</string>
+    <string name="QUALITY_NORMAL">평균</string>
+    <string name="QUALITY_LOW">가난한</string>
+    <string name="RECORD_AUDIO_QUALITY">품질 오디오 녹음</string>
+    <string name="FREE_SPACE_ENDS">디스크 공간이 부족.분은 나중에 기록이 깨진</string>
+    <string name="RECORD_STOPPED_NOT_ENOUGH_FREE_SPACE">기록은 디스크 공간 부족으로 인해 중지</string>
+    <string name="ONLY_FOR_CAMERA">이 설정은 카메라의 역할을 사용할 수 있습니다.</string>
+    <string name="RECORD_STOPPED_DUE_TO_MAX_FILE_LENGTH">녹화 인해 최대 크기로 중지 파일.</string>
+    <string name="FILE_IS_RUNNING_OUT_OF_MAX_SIZE"> 경고! 파일 크기는 2GB의에 도달한다. 녹화는 곧있을 것 정지.</string>
+    <string name="CHANGE_ROLE_TO"> 역할을 변경 </string>
+    <string name="AUDIO_PLAY_ERROR">오디오 재생 오류</string>
+    <string name="PROCESSING_AUDIO">처리 오디오</string>
+    <string name="AUDIO_ENCODING_ERROR">오디오 인코딩 에러</string>
+    <string name="PROCESSING_VIDEO">동영상을 처리하는 …</string>
+    <string name="ATTENTION">주의</string>
+    <string name="VIDEO_WILL_NOT_BE_SAVED">취소하면 비디오는 저장되지 않습니다!</string>
+    <string name="VIDEO_PLAYBACK_ERROR">비디오 오류</string>
+    <string name="SYNC">동기화</string>
+    <string name="EIGHTH_SLIDE_TEXT">완성 된 파일로 결합하기 전에 비디오 및 오디오 트랙의 타이밍을 조정</string>
+
+</resources>

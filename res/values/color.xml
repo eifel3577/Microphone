@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="artist">#ff05a0cd</color>
+    <color name="track">#FF000000</color>
+    <color name="action_bar">#1E1E20</color>
+    <color name="bottom_bar">#ff171718</color>
+    <color name="selected_tab_text_color">#ff0e0d0d</color>
+    <color name="not_selected_tab_text_color">#ff938c8e</color>
+    <color name="list_bg_even">#eee</color>
+    <color name="list_bg_odd">#ccc</color>
+    <color name="progress_bar_bg_color">#ff393a3c</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="lightblue">#ffc8c8ff</color>
+    <color name="darkblue">#ff003e6f</color>
+    <color name="darkyellow">#ff5d5d3a</color>
+    <color name="green">#ff1b8d1b</color>
+    <color name="green_transparent_22">#221b8d1b</color>
+    <color name="green_transparent_44">#441b8d1b</color>
+    <color name="red">#ff8d0000</color>
+    <color name="darkgray">#ff5c5c5c</color>
+    <color name="transparent">#00000000</color>
+    <color name="yellowgreen">#ffb7ff54</color>
+    <color name="orange">#ffff9900</color>
+    <color name="dragging_element_color">#33ff9000</color>
+    <color name="progress_bar">#C9D94E</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="yellow">#fffff600</color>
+    <color name="light_gradient_1">#fffefefe</color>
+    <color name="light_gradient_2">#ff727272</color>
+    <color name="action_bar_red">#CE254E</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="dialog_bg">#29303a</color>
+    <color name="default_text_color">#000</color>
+
+</resources>

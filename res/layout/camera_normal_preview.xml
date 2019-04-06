@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.sapphire.microphone.view.AdaptiveSurfaceView
+        android:id="@+id/adaptive_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/time_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0:00"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/stop_15"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginStart="40dp"
+            android:background="@null"
+            android:onClick="clickedExposure"
+            android:src="@drawable/exposure" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/record_0"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:src="@drawable/record"
+                android:tag="0" />
+
+            <ImageButton
+                android:id="@+id/stop_0"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:src="@drawable/stop" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_group_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/stop_2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:src="@drawable/stop"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/record_2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:src="@drawable/record"
+                android:tag="0"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seek_bar_for_camera"
+            style="@style/SeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:indeterminate="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/time_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:rotation="180"
+            android:text="0:00"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_group_3"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/record_3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:rotation="90"
+                android:src="@drawable/record"
+                android:tag="0"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/stop_3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="40dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:src="@drawable/stop"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:rotation="90"
+            android:text="0:00"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_group_1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:rotation="270"
+            android:text="0:00"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/stop_1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="40dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:src="@drawable/stop"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/record_1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:rotation="90"
+                android:src="@drawable/record"
+                android:tag="0"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
