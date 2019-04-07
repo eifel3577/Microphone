@@ -229,13 +229,22 @@ public final class Util {
 		return numDeleted;
 	}
 
+	//проверка поддержки WifiDirect, появилась с api 14 
+	//Wi-Fi Direct (ранее известный как Wi-Fi Peer-to-Peer) — стандарт (набор программных протоколов), позволяющий двум и
+	//более Wi-Fi-устройствам общаться друг с другом без маршрутизаторов и хот-спотов.
 	public static boolean enableWifiDirect() {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
 			return true;
 		}
 		try {
+			//Reflection API в Java используется для просмотра информации о классах, интерфейсах, методах, полях, 
+			//конструкторах, аннотациях во время выполнения java программ. При этом знать названия исследуемых элементов
+			//	заранее не обязательно.Все классы для работы с reflection расположены в пакете java.lang.reflect.
+			//	Это метод (Method), конструктор (Constructor), массив (Array), поле (Field) и многие другие.
+			
 			Method method1 = Session.current().getManager().getClass()
 					.getMethod("enableP2p", WifiP2pManager.Channel.class);
+			
 			method1.invoke(Session.current().getManager(), Session.current()
 					.getChannel());
 			return true;
