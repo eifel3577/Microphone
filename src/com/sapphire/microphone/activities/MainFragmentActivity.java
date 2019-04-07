@@ -43,6 +43,7 @@ import java.io.InputStream;
 
 public class MainFragmentActivity extends FragmentActivity implements
 		ViewPager.OnPageChangeListener {
+	
 	private CustomViewPager pager;
 	private final static int MODE_NONE = 1;
 	private final static int MODE_DELETE = 2;
@@ -62,17 +63,23 @@ public class MainFragmentActivity extends FragmentActivity implements
 		setContentView(R.layout.main);
 		initUI();
 		initUIL();
+		//установка WifiP2pManager.
+		//Context.WIFI_P2P_SERVICE получает WifiP2pManager для обработки управления одноранговыми соединениями Wi-Fi.
 		Session.current().setManager(
 				(WifiP2pManager) getSystemService(Context.WIFI_P2P_SERVICE),
 				getApplicationContext());
+		//если не включен WifiDirect
 		if (!Util.enableWifiDirect()) {
+			//появляется диалог чтобы его включили иначе будет использоваться только Bluetooth
 			final SaveVideoDialog d = new SaveVideoDialog(this);
 			d.setMessage(getString(R.string.ENABLE_WIFI_DIRECT));
 			d.show();
 		}
 	}
 
+	
 	private void initUIL() {
+		//заменить эту хрень на Picasso
 		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
 				getApplicationContext()).denyCacheImageMultipleSizesInMemory()
 				.memoryCacheSize(4 * 1024 * 1024)
@@ -95,9 +102,11 @@ public class MainFragmentActivity extends FragmentActivity implements
 		ImageLoader.getInstance().init(config);
 	}
 
+	//отображение viewPager
 	private void initUI() {
 		pager = (CustomViewPager) findViewById(R.id.pager);
 		pager.setOffscreenPageLimit(100);
+		//в зависимости от того что выбрано микрофон или камера разный viewPager
 		if (PrefUtil.isMic())
 			pagerAdapter = new MicPagerAdapter(getSupportFragmentManager());
 		else
@@ -110,21 +119,28 @@ public class MainFragmentActivity extends FragmentActivity implements
 		tabs.setTextColorResource(R.color.white);
 		tabs.setOnPageChangeListener(this);
 
+		//устанавливается фильтр активити строка пакет + ACTION_START_RECORDING
 		final IntentFilter intentFilter = new IntentFilter(
 				C.ACTION_START_RECORDING);
+		//устанавливается action что изменился системный язык
 		intentFilter.addAction(Intent.ACTION_LOCALE_CHANGED);
+		//региструруется broadcast который будет отлавливать события что изменился системный язык
 		registerReceiver(actionsReceiver, intentFilter);
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
+		
 		Counter.sharedInstance().onResumeActivity(this);
 		// pagerAdapter.notifyDataSetChanged();
+		//обновляет табы
 		tabs.notifyDataSetChanged();
+		//кладется сообщение в очередь handler через 3 секунды
 		new Handler().postDelayed(new Runnable() {
 			@Override
 			public void run() {
+				//отображает страницу в pager, если ее номер сохранен в префе.По дефолту покажет страницу с индексом 0
 				pager.setCurrentItem(PrefUtil.getLastCheckedTabIndex(), false);
 			}
 		}, 300);
@@ -135,11 +151,14 @@ public class MainFragmentActivity extends FragmentActivity implements
 	public void onPageScrolled(int i, float v, int i2) {
 	}
 
+	//Этот метод будет вызван, когда будет выбрана новая страница
 	@Override
 	public void onPageSelected(int i) {
 		if (i != 2)
 			currentMode = MODE_NONE;
+		//обновляет меню,если оно менялось
 		invalidateOptionsMenu();
+		//номерстраницы ложится в преф
 		PrefUtil.saveLastCheckedTabIndex(i);
 	}
 
@@ -157,6 +176,7 @@ public class MainFragmentActivity extends FragmentActivity implements
 		public Fragment getItem(int i) {
 			switch (i) {
 			case 0:
+					
 				return new DevicesFragmentMic();
 			case 1:
 				return new MicRecordFragment();
@@ -186,15 +206,19 @@ public class MainFragmentActivity extends FragmentActivity implements
 		public CharSequence getPageTitle(int position) {
 			switch (position) {
 			case 0:
+					//устройства
 				return getString(R.string.DEVICES);
 			case 1:
+					//запись
 				return getString(R.string.RECORD);
 			case 2:
+					//настройки
 				return getString(R.string.SETTINGS);
 			}
 			return "";
 		}
 
+		
 		@Override
 		public int getItemPosition(Object object) {
 			if (!(object instanceof DevicesFragmentMic)
@@ -215,6 +239,7 @@ public class MainFragmentActivity extends FragmentActivity implements
 		public Fragment getItem(int i) {
 			switch (i) {
 			case 0:
+					
 				if (PrefUtil.getLastConnectionType() == C.TYPE_BLUETOOTH
 						&& BluetoothAdapter.getDefaultAdapter() != null) {
 					return new DevicesFragmentCameraBT();
@@ -272,6 +297,7 @@ public class MainFragmentActivity extends FragmentActivity implements
 		}
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		if (getCurrentPageNumber() == 2 && !PrefUtil.isMic()) {
