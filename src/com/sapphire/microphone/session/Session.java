@@ -7,16 +7,23 @@ import android.net.wifi.p2p.WifiP2pManager;
 import android.os.Looper;
 import com.sapphire.microphone.C;
 
+//синглтон
 public final class Session {
     private static volatile Session INSTANCE = null;
 
     private boolean isConnected = false;
     private String remoteDeviceName = "";
     private volatile String recordFileName = "";
+    /*Этот класс предоставляет API для управления подключением Wi-Fi. Это позволяет приложению обнаруживать
+    доступные подключенные к WIFI устройства, настраивать соединение с ними.
+    */
     private WifiP2pManager manager;
+    //Канал, который соединяет приложение с платформой Wifi p2p.
     private WifiP2pManager.Channel channel;
+    
     private BluetoothSocket bluetoothSocket;
     private boolean isSCO = false;
+    //по дефолту соединение через bluetooth
     private int connectionType = C.TYPE_BLUETOOTH;
 
     private Session() {
@@ -28,6 +35,7 @@ public final class Session {
         return INSTANCE;
     }
 
+    //сброс соединения
     public void clear() {
         isConnected = false;
         remoteDeviceName = "";
@@ -49,12 +57,16 @@ public final class Session {
         this.remoteDeviceName = remoteDeviceName;
     }
 
+    
     public WifiP2pManager getManager() {
         return manager;
     }
 
+    
     public void setManager(WifiP2pManager manager, final Context context) {
         this.manager = manager;
+        //initialize Регистрирует приложение с помощью инфраструктуры Wi-Fi. Эта функция должна вызываться первой 
+        //перед выполнением любых операций p2p.В Looper идут колбеки
         channel = manager.initialize(context, Looper.getMainLooper(), null);
     }
 
